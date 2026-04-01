@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Novo Atleta{% endblock %}
+
+{% block content %}
+
+<div class="form-container">
+    <h2>Cadastrar Novo Atleta</h2>
+
+    <form id="form-atleta" enctype="multipart/form-data">
+        <input type="text" name="nome" placeholder="Nome" required>
+        <input type="number" name="idade" placeholder="Idade" required>
+        <input type="text" name="esporte" placeholder="Esporte" required>
+
+        <input type="file" name="img" accept="image/*" required>
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    <p id="mensagem"></p>
+
+    <script src="{{ url_for('static', filename='js/atletas.js') }}"></script>
+
+</div>
+
+{% endblock %}

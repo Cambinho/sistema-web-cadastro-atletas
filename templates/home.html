@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<section class="historia">
+    <h2>A participação do Brasil nos Jogos de Inverno</h2>
+    <p>
+        O Brasil estreou nos Jogos Olímpicos de Inverno em 1992, em Albertville,
+        na França. Desde então, atletas brasileiros vêm representando o país
+        em esportes tradicionalmente dominados por nações de clima frio.
+    </p>
+    <p>
+        Mesmo sem medalhas até o momento, a presença brasileira simboliza
+        superação, diversidade e o crescimento do esporte de inverno no país.
+    </p>
+</section>
+
+<section class="cards">
+    <h2>Atletas Brasileiros</h2>
+    <div id="card-container" class="card-container"></div>
+</section>
+
+<script src="{{ url_for('static', filename='js/atletas.js') }}"></script>
+
+
+{% endblock %}
